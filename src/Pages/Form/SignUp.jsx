@@ -17,7 +17,7 @@ const SignUp = () => {
       return;
     }
 
-    if (values.cpass != values.pass) {
+    if (values.cpass !== values.pass) {
       setErrorMsg("*Passwords do not match!");
       return;
     }

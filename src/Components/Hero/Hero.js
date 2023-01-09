@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImg from '../../Resources/Hero/heroImg.gif'
+import Button from "../Button/Button";
 import './Hero.css'
 const Hero = () => {
   return (
@@ -18,11 +19,9 @@ const Hero = () => {
           </div>
           <div className="hero-text--para">
             <p className="hero-text--para--content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+            We are the one and only secure and final destination for RTU notes. There are notes for every subject in every semester. You can easily download it. You can also upload notes while downloading to assist other students. Win-Win for all of us.{" "}
             </p>
+            <Button text = "Get Notes" link = "/get-notes" btnclass = "mt-3 text-lg justify-center !font-bold"/>
           </div>
         </div>
         <div className="hero-img-container">

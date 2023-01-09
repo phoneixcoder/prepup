@@ -6,7 +6,9 @@ import Home from "./Pages/Home/Home";
 import SignUp from "./Pages/Form/SignUp";
 import Login from "./Pages/Login/Login";
 import {auth} from './firebase';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import UploadNotes from "./Pages/UploadNotes/UploadNotes";
 function App() {
 
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -28,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/upload-notes" element={<UploadNotes/>} />
           <Route exact path="/" element={<Home/>} />
         </Routes>
       </Router>
